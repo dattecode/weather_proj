@@ -32,7 +32,8 @@ const Wheather = ({ weatherInfo }) => {
       <h2 className="mb-3 text-6xl md:text-center md:mb-6">{weatherInfo.name}</h2>
 
       <div className="md:flex md:flex-row md:h-auto md:justify-center">
-        <section className="bg-zinc-500 bg-opacity-50 mb-3 p-2 rounded-xl text-center">
+        <section className="bg-zinc-500 bg-opacity-50 mb-3 p-2 rounded-xl text-center
+        md:pr-9">
           <h4 className="text-4xl">{weatherInfo?.weather[0].description}</h4>
 
           <div className="flex flex-row">
@@ -43,7 +44,7 @@ const Wheather = ({ weatherInfo }) => {
             <h3 className="w-full flex justify-center items-center text-4xl">
               {temp ? toCelsius: toFahrenheit} °</h3>
           </div>
-      </section>
+        </section>
 
       <div
           className="bg-zinc-500 bg-opacity-50 

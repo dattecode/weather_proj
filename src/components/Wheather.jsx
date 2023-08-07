@@ -31,7 +31,7 @@ const Wheather = ({ weatherInfo }) => {
       <section className="w-96 m-4 md:w-8/12">
       <h2 className="mb-3 text-6xl md:text-center md:mb-6">{weatherInfo.name}</h2>
 
-      <div className="md:flex md:flex-row md:h-auto">
+      <div className="md:flex md:flex-row md:h-auto md:justify-center">
         <section className="bg-zinc-500 bg-opacity-50 mb-3 p-2 rounded-xl text-center">
           <h4 className="text-4xl">{weatherInfo?.weather[0].description}</h4>
 
